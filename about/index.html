@@ -9,17 +9,18 @@
   </head>
   <body>
     <!-- I need a container to hold the body of my pages -->
-    <div class="container row">
+    <div class="container row mt-5 ms-3">
+        <!-- ^ used a top and left margin to get it off the page. -->
         <div class="navbar container col-4">
             <!-- I'll also need a navbar with the individual elements that correspond to the other pages. -->
                 <nav class="linklist">
-                <ul class="list-group">
-                    <!-- Reminder to put links on these anchors -->
-                    <a class="list-group-item">About Me</a>
-                    <a class="list-group-item">Resume</a>
-                    <a class="list-group-item">Projects</a>
-                    <a class="list-group-item">Links/Personal Pages</a>
-                    <a class="list-group-item disabled">Bank Account Information</a>
+                <ul class="nav flex-column">
+                    <!-- Reminder to put links on these anchors. Deleted class "nav-item" on li elements. May still need it.-->
+                        <a class="nav-link">About Me</a>
+                        <a class="nav-link">Resume</a>
+                        <a class="nav-link">Projects</a>
+                        <a class="nav-link">Links/Personal Pages</a>
+                        <a class="nav-link disabled">Bank Account Information</a>
                     </ul>
                 </nav>
             </div>
