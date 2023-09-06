@@ -13,3 +13,6 @@ Initially used visibility property but opted against it because of every text di
 .slide-cap:first-of-type {
     display: block;
 }
+* {
+    border: 1px solid black;
+}
