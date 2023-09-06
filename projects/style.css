@@ -1,0 +1,13 @@
+.slide-pic {
+    display: none;
+}
+.slide-pic:first-of-type {
+    display:block;
+}
+.slide-cap {
+    visibility: hidden;
+}
+/* Apparently the reason this works is that it's immediately wrapped up in a div. */
+.slide-cap:first-of-type {
+    visibility: visible;
+}

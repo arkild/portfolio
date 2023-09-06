@@ -1,3 +1,11 @@
+// function changeLayout() {
+//     console.log("changing the layout")
+// }
+// changeLayout();
+// window.addEventListener('resize', changeLayout)
+// Layout change rough draft. Will deal with later.
+
+
 // Initially went for booleans until I learned JavaScript has toggles which makes things happen waaaay easier
 const exJob1 = document.querySelector(".expandjob1")
 const exJob2 = document.querySelector(".expandjob2")
