@@ -9,26 +9,25 @@
   </head>
   <body>
     <!-- I need a container to hold the body of my pages -->
-    <div class="container row mt-5 ms-3">
-        <!-- ^ used a top and left margin to get it off the page. -->
-        <div class="navbar container col-4">
+    <div class="container">
+        <div class="content container text-center">
+            <h1>Hello, world!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus alias tempora ea ipsa adipisci doloribus? Aspernatur quo dolores, magni doloremque sequi rem dolorem, error voluptatem veritatis architecto, facere nobis modi?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus inventore corporis ullam, optio minima aliquid, ut et quos error voluptates rerum culpa? Repellat accusantium assumenda perferendis soluta, quisquam enim!</p>
+        </div>
+        <div class="navbar container justify-content-center">
             <!-- I'll also need a navbar with the individual elements that correspond to the other pages. -->
                 <nav class="linklist">
-                <ul class="nav flex-column text-center">
+                <ul class="nav nav-pills nav-fill">
                     <!-- Reminder to put links on these anchors. Deleted class "nav-item" on li elements. May still need it.-->
                         <a class="nav-link">About Me</a>
                         <a class="nav-link">Resume</a>
                         <a class="nav-link">Projects</a>
                         <a class="nav-link">Links/Personal Pages</a>
-                        <a class="nav-link disabled">Bank Account Information (Coming Soon!)</a>
+                        <a class="nav-link disabled"><s>Bank Account Information</s><br> (Coming Soon!)</a>
                     </ul>
                 </nav>
             </div>
-        <div class="content container text-center col-8">
-            <h1>Hello, world!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus alias tempora ea ipsa adipisci doloribus? Aspernatur quo dolores, magni doloremque sequi rem dolorem, error voluptatem veritatis architecto, facere nobis modi?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus inventore corporis ullam, optio minima aliquid, ut et quos error voluptates rerum culpa? Repellat accusantium assumenda perferendis soluta, quisquam enim!</p>
-        </div>
         <!-- Inside this container will have the title, and the body below it. -->
         <!-- This section of typing is reserved for the other pages' unique elements (modal/links for links, carousel for projects, etc.) -->
     </div>
