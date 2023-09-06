@@ -1,0 +1,6 @@
+.hiddenjob1, .hiddenjob2 {
+    display: none;
+}
+.expandjob1, .expandjob2 {
+    cursor: pointer;
+}
