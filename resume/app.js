@@ -1,13 +1,12 @@
-// Turning the expand/contract options into booleans that toggle the display of its children text elements
-let job1 = false;
-let job2 = false;
-const exjob1 = document.querySelector(".expandjob1")
-const hidjob1 = document.querySelectorAll(".hiddenjob1")
+// Initially went for booleans until I learned JavaScript has toggles which makes things happen waaaay easier
+const exJob1 = document.querySelector(".expandjob1")
+const exJob2 = document.querySelector(".expandjob2")
 
 
-exjob1.addEventListener("click", () => {
-    //this initially worked after 2 clicks when "none" and "list-item" were swapped. This lets it work in one click and I have ABSOLUTELY NO IDEA why. If it works, it works.
-    for (jobDesc of hidjob1) {
+exJob1.addEventListener("click", () => {
+    const hidJob1 = document.querySelectorAll(".hiddenjob1")
+    //this initially worked after 2 clicks when "none" and "list-item" were swapped. This lets it work in one click and I have ABSOLUTELY NO IDEA why. Meh. If it works, it works.
+    for (jobDesc of hidJob1) {
         if (jobDesc.style.display === 'list-item') {
             jobDesc.style.display = "none" ;
         } else {
@@ -15,8 +14,22 @@ exjob1.addEventListener("click", () => {
         }
     }
     //Switch between classes that define the hand character on this line
-    const handTog1 = document.getElementById("job1hand");
-        handTog1.classList.toggle("lnr-pointer-right");
-        handTog1.classList.toggle("lnr-pointer-down");
+    const handTog = document.getElementById("job1hand");
+        handTog.classList.toggle("lnr-pointer-right");
+        handTog.classList.toggle("lnr-pointer-down");
 
+})
+
+exJob2.addEventListener("click", () => {
+    const hidJob2 = document.querySelectorAll(".hiddenjob2")
+    for (jobDesc of hidJob2) {
+        if (jobDesc.style.display === 'list-item') {
+            jobDesc.style.display = "none";
+        } else {
+            jobDesc.style.display = "list-item";
+        }
+    }
+    const handTog = document.getElementById("job2hand");
+        handTog.classList.toggle("lnr-pointer-right");
+        handTog.classList.toggle("lnr-pointer-down");
 })
