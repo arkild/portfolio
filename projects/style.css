@@ -1,13 +1,15 @@
 .slide-pic {
     display: none;
+    max-width: 400px;
 }
 .slide-pic:first-of-type {
     display:block;
 }
 .slide-cap {
-    visibility: hidden;
+    display: none;
 }
-/* Apparently the reason this works is that it's immediately wrapped up in a div. */
+/* Apparently the reason this works is that it's immediately wrapped up in a div. 
+Initially used visibility property but opted against it because of every text display taking up space*/
 .slide-cap:first-of-type {
-    visibility: visible;
+    display: block;
 }
