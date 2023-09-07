@@ -10,11 +10,15 @@
   <body>
     <!-- I need a container to hold the body of my pages -->
     <div class="container">
-        <div class="content container text-center">
+        <div class="content container text-center row">
             <h1>Links Page</h1>
-            <p>Link 1</p>
-            <p>Link 2</p> <!-- Thinking about making this a fake instagram link that dies when clicked and says "I don't actually have an instagram."--> 
-            <p>Expandable item list (will not expand unless a modal is approved)</p> <!-- This modal will have a yes/no, behaving differently based on which one is selected. Thinking about deleting/removing the link off of the site if the person selects no, like a "too bad, so sad" kinda thing.-->
+            <a href="https://www.linkedin.com/in/koray-semenuik" target="_blank">LinkedIn</a>
+            <a href="" id="fakelink">Instagram</a> <!-- Thinking about making this a fake instagram link that dies when clicked and says "I don't actually have an instagram."--> 
+            <a href="https://github.com/arkild" target="_blank">GitHub</a>
+            <a href="" class="lead-in">List of Hobby Links</a> <!-- This modal will have a yes/no, behaving differently based on which one is selected. Thinking about deleting/removing the link off of the site if the person selects no, like a "too bad, so sad" kinda thing.-->
+            <a href="https://docs.google.com/spreadsheets/d/1cVK4wX4Kn2-SjxQxzmhAQa589OV99uYql4d3Tg_H-HA/edit?usp=sharing" class="hidden-link">Yu-Gi-Oh! Forbidden Memories RNG Manipulation Speedrun Guide</a>
+            <a href="https://docs.google.com/document/d/1JsGW2lRUnW8BntOPz8R5QKYEyBqsf06nqHikWkKDFpw/edit?usp=sharing" class="hidden-link">"The Columnist Manifesto": A comprehensive guide on high-level game theory implemented in head-to-head play of the puzzle game Columns III
+            </a>
         </div>
         <div class="navbar container justify-content-center">
             <!-- I'll also need a navbar with the individual elements that correspond to the other pages. -->
@@ -32,5 +36,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
   </body>
 </html>
