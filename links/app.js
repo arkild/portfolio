@@ -3,5 +3,5 @@ fakeLink.addEventListener('click', (event) => {
     event.preventDefault();
     fakeLink.innerHTML = "<s>Instagram</s> (I don't actually have it)";
     fakeLink.classList.add("nav-link")
-    // I really don't know how this worked but it does.
+    // I really don't know how this worked but it does. I figured I still needed to disable the link but it disabled itself on its own.
 })
