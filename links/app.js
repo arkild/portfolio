@@ -17,29 +17,30 @@ const hiddenLink = document.querySelectorAll(".hidden-link");
 
 modalSpawn.addEventListener('click', (event) => {
     event.preventDefault()
+    // This checks to see if the link has already been exhausted
     if (modalSpawn.style.color === "red") {
         return;
     } else {
     modal.style.display = "block";
     }
 })
-
+//This function will close the modal I made.
 function dropModal () {
     modal.style.display = "none";
 }
 
 noThanks.addEventListener('click', () => {
-    console.log("No Thanks")
     dropModal();
     modalSpawn.innerHTML = "<s>Sorry, pal. Refresh to try again.</s>";
     modalSpawn.style.color = "red";
+    //This ties into modalSpawn's event listener to disable the link
     modalSpawn.classList.add("nav-link");
 })
 
 thatsCool.addEventListener('click', () => {
-    console.log("That's Cool")
     dropModal();
     modalSpawn.style.display = "none";
+    //Needing to loop through an array as there's more than 1 hiddenLink
     for (link of hiddenLink) {
         link.style.display = "block";
     }
