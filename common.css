@@ -10,15 +10,25 @@ body {
     max-width: 800px;
 }
 .content {
-    background-color: grey;
+    background-color: rgba(180,180,180,1);
+    border-radius: 5%;
 }
 h1 {
-    background-color: blue;
+    background-color: #000080;
+    color: #8a2be2;
+    border-radius: 5%;
+}
+a { 
+    color: #5539cc;
 }
 .navbar {
     background-color: indigo;
     padding: 1rem;
+    border-radius: 5%;
 }
 .linklist {
-    background-color: forestgreen;
+    background-color: rgba(0, 205, 250, 0.7);
+}
+.nav-link {
+    color: black;
 }
