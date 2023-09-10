@@ -1,6 +1,6 @@
 .slide-pic {
     display: none;
-    max-width: 400px;
+    max-width: 370px;
 }
 .slide-pic:first-of-type {
     display:block;
@@ -14,5 +14,5 @@ Initially used visibility property but opted against it because of every text di
     display: block;
 }
 * {
-    border: 1px solid black;
+    border: 1px dotted black;
 }

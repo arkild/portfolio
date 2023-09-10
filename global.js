@@ -9,6 +9,7 @@ tomorrow.setDate(today.getDate() + 1) //Tomorrow's date
 dateDisplay.innerText = `${tomorrow.getMonth() + 1}/${tomorrow.getDate()}`
 
 
+//This function will relocate the navbar from the bottom of the screen to the left of the screen with a vertical layout by changing the html classes in Bootstrap.
 function changeLayout() {
     if (window.innerWidth > 800) {
         document.querySelector("div").classList.add("row");
@@ -30,4 +31,4 @@ changeLayout();
 window.addEventListener('resize', changeLayout)
 
 
-// Layout change rough draft. Will deal with later.
+
