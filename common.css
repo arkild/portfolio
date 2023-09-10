@@ -5,9 +5,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Play', sans-serif;
 }
 .bodybox {
-    max-width: 800px;
+    max-width: 900px;
 }
 .content {
     background-color: rgba(180,180,180,1);
